@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(large.png) no-repeat fixed ; 
+  background-position-x: center;
+  background-position-y: 40px;
+ 
+  
+ 
+}
+
+
+#centered {
+  margin-top: 350px;
+  color:white;
+  font-size:30px;
+  text-align: center; 
+}
+.centerText
+{
+	text-align: center; 
+}
+
+#text1{
+  color:red;
+  font-size:60px;
+   position: relative;
+   left: 30px;
+   top: 275px;
+}
+#text2{
+  color:green;
+  position: relative;
+  font-size:70px;
+  left: 30px;
+  top: 280px;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div id=text1>coming soon</div>
+
+<div id=text2><b>instock solution</b></div>
+<script>
+function background(){
+     var w = window.innerWidth;
+  	 var h = window.innerHeight;
+	 
+	 
+	 
+	 
+	
+	 if(w <=500 )
+	 {
+	     
+		document.body.style.backgroundImage = "url('small.png')";
+		document.getElementById('text1').style.color='blue'
+		document.getElementById('text2').style.color='yellow'
+		document.getElementById('text1').style.fontSize="35px";
+		document.getElementById('text2').style.fontSize="40px";
+	    
+	 }else  if (w <= 1400) 
+	 
+	 {
+	
+	   document.body.style.backgroundImage = "url('medium.png')";
+	   document.getElementById('text1').style.color='black'
+	   document.getElementById('text2').style.color='white'
+	   document.getElementById('text1').style.fontSize="50px";
+	   document.getElementById('text2').style.fontSize="55px";
+		
+	   
+	 }
+	 else
+	 {
+	   document.body.style.backgroundImage = "url('large.png')";
+	   document.getElementById('text1').style.color='purple'
+	   document.getElementById('text2').style.color='green'
+	   document.getElementById('text1').style.fontSize="60px";
+	   document.getElementById('text2').style.fontSize="65px";
+		
+	   
+	 }
+
+
+}
+
+function videoButton(){
+  alert();
+}
+
+$(document).ready(function(){
+	background();
+  $(window).resize(function(){
+    
+	 background();
+		
+  });
+});
+</script>
+</head>
+<body>
+
+ 	
+	
+
+
+
+<!-- Trigger/Open The Modal -->
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
